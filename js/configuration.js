@@ -138,7 +138,7 @@ $( '.mapDetails' ).hide();
       function initialize() {
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
-          center: new google.maps.LatLng(17.3726375,78.547917),
+          center: new google.maps.LatLng(17.728441,83.3016777),
           zoom: 14,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
