@@ -1,138 +1,186 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
 
-		
 
-		
-		 <link href="../css/bootstrap.css" rel="stylesheet"> 
-		 <!-- Custom styles for this template -->
-		 <link href="../css/style.css" rel="stylesheet">
-		 <link href="css/mobilestyle.css" rel="stylesheet">
-		 
+    <title>Configure your app</title>
 
-	</head>
-	<body>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">    
+    <link href="../css/font-awesome.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
 	<div class="wrapper" >
+    <!-- Action Bar -->
+    <div class="actionBar fixedtop">
+      <!-- Navigation Drawer -->
+      <div class="navigationDrawer" onClick="history.go(-1); return false;">
+        <div class="drawerIcon inner"> 
+          <i class="fa fa-angle-left"></i>
+        </div>
+      </div>
+     <!-- Navigation Drawer -->
+                      
+      <div class="screenName" onClick="history.go(-1); return false;">
+        General Services
+      </div>
 
-                <div class="wrappernavBar fixedtop">
-                          
-                            <div class="leftNavigation">
+      <div class="overflow pull-right">
+        <ul class="nav navbar-right">
+          <li><a href="products/cart.html" class="cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               <span class="glyphicon glyphicon-th"></span><!-- <img src="../images/ic_action_overflow.png">  -->
+            </a>
+            <ul class="dropdown-menu pull-right">
+               <li><a href="profile/profile.html">Profile</a></li>
+              <li class="divider"></li>
+              <li><a href="profile/signout.html">Signout</a></li>
+            </ul>
+          </li>
+        </ul>  
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- /Action Bar -->
 
-                                         <div class="leftNavigationIcon"> 
-                                             <span class="horizantalline"></span>
-                                             <span class="horizantalline"></span> 
-                                             <span class="horizantalline"></span>
-                                          </div>   
+    <div class="productView">
+       <div class="productImageBlock">
+          <a class="image" href="#"><img src="../images/mobile/contact-us.jpg" ></a>
+       </div> 
 
-                                          <div class="leftNavigationContent"  >
-                                          <!-- Sidebar -->
-                                            <div id="accordian">
-                                              <ul>
-                                                 <li>
-                                                  <h3><span class="icon-services"></span>SERVICES</h3>
-                                                  <ul>
-                                                    <li><a href="services_general.html">General Services</a></li>
-                                                    <li><a href="services_ambulance.html">Ambulance</a></li>
-                                                    <li><a href="services_atm.html">Atm</a></li>
-                                                  </ul>
-                                                </li>
-                                                <!-- we will keep this LI open by default -->
-                                                <li >
-                                                  <h3><span class="icon-offers"></span>OFFERS</h3>
-                                                  <ul>
-                                                    <li><a href="offers_general.html">General Offers</a></li>
-                                                    <li><a href="offers_deals.html">Special Deals</a></li>
-                                                    <li><a href="offers_special.html">Special Offers</a></li>
-                                                  </ul>
-                                                </li>
-                                                <li class="active">
-                                                  <h3><span class="icon-products"></span>PRODUCTS</h3>
-                                                  <ul>
-                                                    <li><a href="products_kids.html">Kids, Cinema...</a></li>
-                                                    <li><a href="products_food.html">Restaurents and Food Court</a></li>
-                                                    <li><a href="products_stores.html">Stores and Shoping</a></li>
-                                                  </ul>
-                                                </li>
-                                              </ul>
-                                           </div>
-                                        </div>
+       <div class="productDetailsBlock">
+         <div class="leftBlock pull-left">
+           <p class="productName">Call 8885502282</p>
+           <p class="productPrice">Avail 20% Off </span> (Only Today)</p>
+         </div>
+         <div class="rightBlock pull-right">
+           <i class="fa fa-heart-o"></i>
+         </div>
+         <div class="clearfix"></div>
+       </div>
+    </div>
 
-                          </div>
+    <div class="downloadBtn">
+      <button class="btn btn-primary redBtn">Download App</button>
+    </div>
 
-                           <div class="logoIcon">     
-                             <img src="images/mobile/logoicon.png" width="14px" height="14px" >
-                          </div> 
+  </div>  
 
-                          <div class="logoText">
-                            General Services    
-                          </div>
 
-                             <a class="cartIcon"  href="cart.html">     
-                             <img src="images/mobile/cart.png" width="14px" height="14px" >
-                           </a> 	
-
-                           <div class="rightNav">
-                               
-                               
-                               <div class="rightNavigationContent"  >
-                                      
-                                      <ul class="nav">
-                                          <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                               <span class="horizantalline"></span>
-                                               <span class="horizantalline"></span> 
-                                               <span class="horizantalline"></span> 
-                                             </a>
-                                            <ul class="dropdown-menu">
-                                              <li><a href="profile.html">Profile</a></li>
-                                              <li class="divider"></li>
-                                              <li><a href="signout.html">Signout</a></li>
-                                            </ul>
-                                          </li>
-                                    </ul>
-                                                                        
+                    <!-- ProductDetails -->       
+                    <!-- <div class="menu" >
+                       
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                  Services
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                <div class="list-group">
+                                  <a  href="#" class="list-group-item">
+                                    General Services
+                                  </a>
+                                  <a href="#"  class="list-group-item">
+                                    Ambulance
+                                  </a>
+                                  <a href="#"  class="list-group-item">
+                                    Atm
+                                  </a>
                                 </div>
-                          </div>   
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                  Offers
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <div class="list-group">
+                                  <a href="#"  class="list-group-item">
+                                    General Offers
+                                  </a>
+                                  <a href="#"  class="list-group-item">
+                                    Special Deals
+                                  </a>
+                                  <a href="#"  class="list-group-item">
+                                    Special Offers
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                  Products
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <div class="list-group">
+                                  <a href="#"  class="list-group-item">
+                                    Kids, Cinema
+                                  </a>
+                                  <a href="#"  class="list-group-item">
+                                    Restaurants and Food Court
+                                  </a>
+                                  <a href="#"  class="list-group-item">
+                                    Stores and Shoping
+                                  </a>
+                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div> -->
+                   <!-- ProductDetails -->   
 
 
-
-
-               		 </div>
-
+                             
               
-     </div>    		 		  
+       		 		  
 
 				
 
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-         <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-         <script src="../js/bootstrap.min.js"></script>
-		 <script src="js/configuration.js"></script>
-
-		 <script src="js/jquery.nicescroll.js"></script>
-		 <script>
-		 
-
-		// Custom Jquery Scroll bar ..
-		    $(document).ready(
-
-		      function() { 
-
-		        $("html").niceScroll();
-		        //moving scroll bar index to top
-		        $("#ascrail2000").css('z-index',99999); 
-		      }
-
-		    );
-
-
-
-		 </script>	
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/configuration.js"></script>
+ <script src="../js/jquery.nicescroll.js"></script>
+<script type="text/javascript">
+ 
+</script>
+		
 	
 	</body>
 </html>
